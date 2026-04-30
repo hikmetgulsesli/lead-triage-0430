@@ -1,0 +1,74 @@
+[
+  {
+    "screenId": "c1179df182064524a1848b38afc8e1db",
+    "title": "Boş Durum Ekranı",
+    "componentName": "BosDurumEkrani",
+    "file": "src/screens/BosDurumEkrani.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "a2349f6e1f4f440099444acb419d31b6",
+    "title": "Pipeline Görünümü",
+    "componentName": "PipelineGorunumu",
+    "file": "src/screens/PipelineGorunumu.tsx",
+    "buttons": 7,
+    "inputs": 1,
+    "links": 4
+  },
+  {
+    "screenId": "b9b26efc2c8743c3a5faea9c24e1db0e",
+    "title": "Adaylar Listesi",
+    "componentName": "AdaylarListesi",
+    "file": "src/screens/AdaylarListesi.tsx",
+    "buttons": 16,
+    "inputs": 1,
+    "links": 4
+  },
+  {
+    "screenId": "7fead0fb42544480ba6283554095fc69",
+    "title": "Yeni Lead Ekle/Düzenle",
+    "componentName": "YeniLeadEkleduzenle",
+    "file": "src/screens/YeniLeadEkleduzenle.tsx",
+    "buttons": 6,
+    "inputs": 4,
+    "links": 4
+  },
+  {
+    "screenId": "0af32d09e04f4918bef16638bc799ad5",
+    "title": "Analizler Paneli",
+    "componentName": "AnalizlerPaneli",
+    "file": "src/screens/AnalizlerPaneli.tsx",
+    "buttons": 2,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "6ff8803d890f4cc48e3bbf024d118e85",
+    "title": "Uygulama Ayarları",
+    "componentName": "UygulamaAyarlari",
+    "file": "src/screens/UygulamaAyarlari.tsx",
+    "buttons": 5,
+    "inputs": 3,
+    "links": 8
+  },
+  {
+    "screenId": "6c12bd9e329540e8937dada35cac66f7",
+    "title": "Profil ve Hesap Paneli",
+    "componentName": "ProfilVeHesapPaneli",
+    "file": "src/screens/ProfilVeHesapPaneli.tsx",
+    "buttons": 2,
+    "inputs": 2,
+    "links": 2
+  },
+  {
+    "screenId": "9062e2ff63f945b79568cce00cb576c3",
+    "title": "Veri Depolama Hatası",
+    "componentName": "VeriDepolamaHatasi",
+    "file": "src/screens/VeriDepolamaHatasi.tsx",
+    "buttons": 5,
+    "inputs": 1,
+    "links": 4
+  }
+]
