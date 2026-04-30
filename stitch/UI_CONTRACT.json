@@ -1,0 +1,3457 @@
+[
+  {
+    "screenId": "7ef24ff064284a9e825ab130f010c78a",
+    "screenTitle": "Analizler Paneli",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 115
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 116
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 117
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 118
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 125
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 115
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 116
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 117
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 118
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 125
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 6,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "74d8116acff24e3082b3027a4e086aa6",
+    "screenTitle": "Boş Durum Ekranı",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 113
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead Ekle",
+        "line": 137
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 113
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead Ekle",
+        "line": 137
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 7,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "58086bec2986499484e0a44dadc20977",
+    "screenTitle": "Leads Listesi",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 113
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead",
+        "line": 130
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 171
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 203
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 206
+      },
+      {
+        "type": "input",
+        "label": "Arama yap...",
+        "inputType": "text",
+        "placeholder": "Arama yap...",
+        "line": 142
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 146
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 151
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 113
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead",
+        "line": 130
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 171
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 203
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 206
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Arama yap...",
+        "inputType": "text",
+        "placeholder": "Arama yap...",
+        "line": 142
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 146
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 151
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 14,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "1be55f17b316452c9742fd2f910eb209",
+    "screenTitle": "Profil ve Hesap Paneli",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "close",
+        "line": 128
+      },
+      {
+        "type": "button",
+        "label": "Kapat",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "Çıkış Yap",
+        "line": 196
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 142
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 155
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 176
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 184
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "close",
+        "line": 128
+      },
+      {
+        "type": "button",
+        "label": "Kapat",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "Çıkış Yap",
+        "line": 196
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 142
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 155
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 176
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 184
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 7,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "bb76c733a40440d7aa94b8cd17f9ff99",
+    "screenTitle": "Yeni Lead Ekleme Modalı",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead",
+        "line": 136
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 171
+      },
+      {
+        "type": "button",
+        "label": "Vazgeç",
+        "line": 243
+      },
+      {
+        "type": "button",
+        "label": "Lead Ekle",
+        "line": 246
+      },
+      {
+        "type": "input",
+        "label": "Örn. Ayşe Demir",
+        "inputType": "text",
+        "placeholder": "Örn. Ayşe Demir",
+        "line": 183
+      },
+      {
+        "type": "input",
+        "label": "Örn. Global Yazılım",
+        "inputType": "text",
+        "placeholder": "Örn. Global Yazılım",
+        "line": 188
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 194
+      },
+      {
+        "type": "input",
+        "label": "0.00",
+        "inputType": "number",
+        "placeholder": "0.00",
+        "line": 210
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 217
+      },
+      {
+        "type": "input",
+        "label": "date",
+        "inputType": "date",
+        "line": 230
+      },
+      {
+        "type": "input",
+        "label": "Örn. Cuma günü teklif detayları için tekrar aranacak...",
+        "inputType": "textarea",
+        "placeholder": "Örn. Cuma günü teklif detayları için tekrar aranacak...",
+        "line": 237
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 177
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 122
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Yeni Lead",
+        "line": 136
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 171
+      },
+      {
+        "type": "button",
+        "label": "Vazgeç",
+        "line": 243
+      },
+      {
+        "type": "button",
+        "label": "Lead Ekle",
+        "line": 246
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Örn. Ayşe Demir",
+        "inputType": "text",
+        "placeholder": "Örn. Ayşe Demir",
+        "line": 183
+      },
+      {
+        "type": "input",
+        "label": "Örn. Global Yazılım",
+        "inputType": "text",
+        "placeholder": "Örn. Global Yazılım",
+        "line": 188
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 194
+      },
+      {
+        "type": "input",
+        "label": "0.00",
+        "inputType": "number",
+        "placeholder": "0.00",
+        "line": 210
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 217
+      },
+      {
+        "type": "input",
+        "label": "date",
+        "inputType": "date",
+        "line": 230
+      },
+      {
+        "type": "input",
+        "label": "Örn. Cuma günü teklif detayları için tekrar aranacak...",
+        "inputType": "textarea",
+        "placeholder": "Örn. Cuma günü teklif detayları için tekrar aranacak...",
+        "line": 237
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 16,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "102f243fd9c74d77989937372b79078f",
+    "screenTitle": "Ayarlar Sayfası",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 118
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Genel",
+        "href": "#",
+        "line": 137
+      },
+      {
+        "type": "link",
+        "label": "Tema",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "Hatırlatıcılar",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 125
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 128
+      },
+      {
+        "type": "button",
+        "label": "Kompakt",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "Rahat",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "İptal",
+        "line": 212
+      },
+      {
+        "type": "button",
+        "label": "Değişiklikleri Kaydet",
+        "line": 215
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 182
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 201
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 118
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Genel",
+        "href": "#",
+        "line": 137
+      },
+      {
+        "type": "link",
+        "label": "Tema",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "Hatırlatıcılar",
+        "href": "#",
+        "line": 145
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 125
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 128
+      },
+      {
+        "type": "button",
+        "label": "Kompakt",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "Rahat",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "İptal",
+        "line": 212
+      },
+      {
+        "type": "button",
+        "label": "Değişiklikleri Kaydet",
+        "line": 215
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 182
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 201
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 15,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "0696706b5a45413c91f3d35e96ed0c61",
+    "screenTitle": "Veri Depolama Hatası Bannerı",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 113
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "Tekrar Dene",
+        "line": 132
+      },
+      {
+        "type": "button",
+        "label": "Yerel Veriyi Temizle",
+        "line": 133
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 113
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "Tekrar Dene",
+        "line": 132
+      },
+      {
+        "type": "button",
+        "label": "Yerel Veriyi Temizle",
+        "line": 133
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 8,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "a0bdb1312c1648ceb381ce28de85f260",
+    "screenTitle": "Silme Onay Modalı",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "İptal",
+        "line": 123
+      },
+      {
+        "type": "button",
+        "label": "Evet, Sil",
+        "line": 127
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "İptal",
+        "line": 123
+      },
+      {
+        "type": "button",
+        "label": "Evet, Sil",
+        "line": 127
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 2,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "c1c1f1fa8391403888e7a1c52f98fc8e",
+    "screenTitle": "Pipeline Görünümü",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 113
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 121
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 124
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 145
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 161
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 177
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 204
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 220
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 247
+      },
+      {
+        "type": "input",
+        "label": "Ara...",
+        "inputType": "text",
+        "placeholder": "Ara...",
+        "line": 119
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 113
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 121
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 124
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 145
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 161
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 177
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 204
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 220
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 247
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Ara...",
+        "inputType": "text",
+        "placeholder": "Ara...",
+        "line": 119
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 13,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "d0f724fcd91b4a4281d5a27916e9bbb6",
+    "screenTitle": "Yeni Lead Ekleme Modalı",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 124
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 125
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 127
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 131
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 134
+      },
+      {
+        "type": "button",
+        "label": "Kapat",
+        "line": 154
+      },
+      {
+        "type": "button",
+        "label": "Vazgeç",
+        "line": 220
+      },
+      {
+        "type": "button",
+        "label": "Lead Ekle",
+        "line": 223
+      },
+      {
+        "type": "input",
+        "label": "Örn: Ahmet Yılmaz",
+        "inputType": "text",
+        "placeholder": "Örn: Ahmet Yılmaz",
+        "line": 164
+      },
+      {
+        "type": "input",
+        "label": "Örn: Teknoloji A.Ş.",
+        "inputType": "text",
+        "placeholder": "Örn: Teknoloji A.Ş.",
+        "line": 169
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 175
+      },
+      {
+        "type": "input",
+        "label": "0.00",
+        "inputType": "number",
+        "placeholder": "0.00",
+        "line": 190
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 196
+      },
+      {
+        "type": "input",
+        "label": "date",
+        "inputType": "date",
+        "line": 210
+      },
+      {
+        "type": "input",
+        "label": "Lead ile ilgili alınacak bir sonraki adımı buraya not edin...",
+        "inputType": "textarea",
+        "placeholder": "Lead ile ilgili alınacak bir sonraki adımı buraya not edin...",
+        "line": 215
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 159
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 124
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 125
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 127
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 131
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 134
+      },
+      {
+        "type": "button",
+        "label": "Kapat",
+        "line": 154
+      },
+      {
+        "type": "button",
+        "label": "Vazgeç",
+        "line": 220
+      },
+      {
+        "type": "button",
+        "label": "Lead Ekle",
+        "line": 223
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Örn: Ahmet Yılmaz",
+        "inputType": "text",
+        "placeholder": "Örn: Ahmet Yılmaz",
+        "line": 164
+      },
+      {
+        "type": "input",
+        "label": "Örn: Teknoloji A.Ş.",
+        "inputType": "text",
+        "placeholder": "Örn: Teknoloji A.Ş.",
+        "line": 169
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 175
+      },
+      {
+        "type": "input",
+        "label": "0.00",
+        "inputType": "number",
+        "placeholder": "0.00",
+        "line": 190
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 196
+      },
+      {
+        "type": "input",
+        "label": "date",
+        "inputType": "date",
+        "line": 210
+      },
+      {
+        "type": "input",
+        "label": "Lead ile ilgili alınacak bir sonraki adımı buraya not edin...",
+        "inputType": "textarea",
+        "placeholder": "Lead ile ilgili alınacak bir sonraki adımı buraya not edin...",
+        "line": 215
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 17,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "bf16ef62aca24aed86f1a3c3a8428228",
+    "screenTitle": "Leads Listesi",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 130
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 142
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 145
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "Düzenle",
+        "line": 225
+      },
+      {
+        "type": "button",
+        "label": "Sil",
+        "line": 228
+      },
+      {
+        "type": "button",
+        "label": "Düzenle",
+        "line": 260
+      },
+      {
+        "type": "button",
+        "label": "Sil",
+        "line": 263
+      },
+      {
+        "type": "button",
+        "label": "Düzenle",
+        "line": 295
+      },
+      {
+        "type": "button",
+        "label": "Sil",
+        "line": 298
+      },
+      {
+        "type": "input",
+        "label": "İsim, şirket veya kelime ara...",
+        "inputType": "text",
+        "placeholder": "İsim, şirket veya kelime ara...",
+        "line": 172
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 177
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 186
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 130
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 136
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 142
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 145
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "Düzenle",
+        "line": 225
+      },
+      {
+        "type": "button",
+        "label": "Sil",
+        "line": 228
+      },
+      {
+        "type": "button",
+        "label": "Düzenle",
+        "line": 260
+      },
+      {
+        "type": "button",
+        "label": "Sil",
+        "line": 263
+      },
+      {
+        "type": "button",
+        "label": "Düzenle",
+        "line": 295
+      },
+      {
+        "type": "button",
+        "label": "Sil",
+        "line": 298
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "İsim, şirket veya kelime ara...",
+        "inputType": "text",
+        "placeholder": "İsim, şirket veya kelime ara...",
+        "line": 172
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 177
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 186
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 16,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "df8183ece21645e3b2fc4ebe36326c75",
+    "screenTitle": "Analizler Paneli",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 116
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 125
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 130
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 133
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 116
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 125
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 130
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 133
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 6,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "59cc06504a234861917555c5c151f027",
+    "screenTitle": "Silme Onay Modalı",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "İptal",
+        "line": 131
+      },
+      {
+        "type": "button",
+        "label": "Evet, Sil",
+        "line": 135
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "İptal",
+        "line": 131
+      },
+      {
+        "type": "button",
+        "label": "Evet, Sil",
+        "line": 135
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 2,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "5c31f7d44e4948398afb5ee7746cab00",
+    "screenTitle": "Profil ve Hesap Paneli",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "Billing",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "Integrations",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "Security",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "Center",
+        "href": "#",
+        "line": 195
+      },
+      {
+        "type": "link",
+        "label": "API Docs",
+        "href": "#",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 125
+      },
+      {
+        "type": "button",
+        "label": "Kapat",
+        "line": 207
+      },
+      {
+        "type": "button",
+        "label": "Sign Out",
+        "line": 210
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 161
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 167
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Profile",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "Billing",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "Integrations",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "Security",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "Center",
+        "href": "#",
+        "line": 195
+      },
+      {
+        "type": "link",
+        "label": "API Docs",
+        "href": "#",
+        "line": 199
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "close",
+        "line": 125
+      },
+      {
+        "type": "button",
+        "label": "Kapat",
+        "line": 207
+      },
+      {
+        "type": "button",
+        "label": "Sign Out",
+        "line": 210
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 161
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 167
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 11,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "c121e23e83a245918f7624baa0809c75",
+    "screenTitle": "Boş Durum Ekranı",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 118
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 126
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 129
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead Ekle",
+        "line": 149
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 118
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 121
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 126
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 129
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead Ekle",
+        "line": 149
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 7,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "8702cc85f7754af3bdaddd3b3a218bfe",
+    "screenTitle": "Pipeline Görünümü",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 135
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 139
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 142
+      },
+      {
+        "type": "button",
+        "label": "Filtrele",
+        "line": 158
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 221
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 251
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 267
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 297
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 313
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 135
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 139
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 142
+      },
+      {
+        "type": "button",
+        "label": "Filtrele",
+        "line": 158
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 221
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 251
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 267
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 297
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 313
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 15,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "46da8bbff42540f2801680c59f706539",
+    "screenTitle": "Ayarlar Sayfası",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 125
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 128
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Genel",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "Tema",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "Hatırlatıcılar",
+        "href": "#",
+        "line": 161
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 139
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 142
+      },
+      {
+        "type": "button",
+        "label": "Kompakt",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "Rahat",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Değişiklikleri Kaydet",
+        "line": 219
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 190
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 208
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 125
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 128
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Genel",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "Tema",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "Hatırlatıcılar",
+        "href": "#",
+        "line": 161
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 139
+      },
+      {
+        "type": "button",
+        "label": "search",
+        "line": 142
+      },
+      {
+        "type": "button",
+        "label": "Kompakt",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "Rahat",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Değişiklikleri Kaydet",
+        "line": 219
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 190
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 208
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 14,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "1e9da61f55a944d59421eff286101585",
+    "screenTitle": "Veri Depolama Hatası Bannerı",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "Search",
+        "line": 127
+      },
+      {
+        "type": "button",
+        "label": "Notifications",
+        "line": 130
+      },
+      {
+        "type": "button",
+        "label": "Yerel Veriyi Temizle",
+        "line": 147
+      },
+      {
+        "type": "button",
+        "label": "Tekrar Dene",
+        "line": 150
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Leads",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 122
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Search",
+        "line": 127
+      },
+      {
+        "type": "button",
+        "label": "Notifications",
+        "line": 130
+      },
+      {
+        "type": "button",
+        "label": "Yerel Veriyi Temizle",
+        "line": 147
+      },
+      {
+        "type": "button",
+        "label": "Tekrar Dene",
+        "line": 150
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 8,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "45bd33e21da9480f9681c85eff369be6",
+    "screenTitle": "Analizler Paneli",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 180
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 181
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 182
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 183
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 187
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 190
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 180
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 181
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 182
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 183
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 187
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 190
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 6,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "656281255d7a45abb111ffb7ac2e5f3c",
+    "screenTitle": "Veri Depolama Hatası Bannerı",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 114
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 115
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 116
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 125
+      },
+      {
+        "type": "button",
+        "label": "Yerel Veriyi Temizle",
+        "line": 137
+      },
+      {
+        "type": "button",
+        "label": "Tekrar Dene",
+        "line": 140
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 114
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 115
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 116
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 117
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 125
+      },
+      {
+        "type": "button",
+        "label": "Yerel Veriyi Temizle",
+        "line": 137
+      },
+      {
+        "type": "button",
+        "label": "Tekrar Dene",
+        "line": 140
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 8,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "ba00954e812f4430aea39bfa964fdcc6",
+    "screenTitle": "Boş Durum Ekranı",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 113
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead Ekle",
+        "line": 137
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 112
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 113
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead Ekle",
+        "line": 137
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 7,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "6f8e422a5a404e9ca4037dce256c5962",
+    "screenTitle": "Pipeline Görünümü",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 117
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "Notifications",
+        "line": 126
+      },
+      {
+        "type": "button",
+        "label": "Account",
+        "line": 129
+      },
+      {
+        "type": "button",
+        "label": "Yeni Aday",
+        "line": 147
+      },
+      {
+        "type": "input",
+        "label": "Aday veya şirket ara...",
+        "inputType": "text",
+        "placeholder": "Aday veya şirket ara...",
+        "line": 145
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 117
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 122
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Notifications",
+        "line": 126
+      },
+      {
+        "type": "button",
+        "label": "Account",
+        "line": 129
+      },
+      {
+        "type": "button",
+        "label": "Yeni Aday",
+        "line": 147
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Aday veya şirket ara...",
+        "inputType": "text",
+        "placeholder": "Aday veya şirket ara...",
+        "line": 145
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 8,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "740ff27d412048a59e2ab0cff96a2944",
+    "screenTitle": "Leads Listesi",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 118
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 124
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 127
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 138
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 141
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead",
+        "line": 154
+      },
+      {
+        "type": "button",
+        "label": "tune",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 194
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 224
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 225
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 255
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 256
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 286
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 287
+      },
+      {
+        "type": "input",
+        "label": "Ara...",
+        "inputType": "text",
+        "placeholder": "Ara...",
+        "line": 136
+      },
+      {
+        "type": "input",
+        "label": "İsim, şirket veya e-posta ara...",
+        "inputType": "text",
+        "placeholder": "İsim, şirket veya e-posta ara...",
+        "line": 163
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 166
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 172
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 118
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 124
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 127
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 138
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 141
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead",
+        "line": 154
+      },
+      {
+        "type": "button",
+        "label": "tune",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 194
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 224
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 225
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 255
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 256
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 286
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 287
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Ara...",
+        "inputType": "text",
+        "placeholder": "Ara...",
+        "line": 136
+      },
+      {
+        "type": "input",
+        "label": "İsim, şirket veya e-posta ara...",
+        "inputType": "text",
+        "placeholder": "İsim, şirket veya e-posta ara...",
+        "line": 163
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 166
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 172
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 20,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "85ec769521e84fe092be5b6026cb8d5d",
+    "screenTitle": "Ayarlar Sayfası",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 124
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 125
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 128
+      },
+      {
+        "type": "link",
+        "label": "Genel",
+        "href": "#",
+        "line": 144
+      },
+      {
+        "type": "link",
+        "label": "Tema",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "Hatırlatıcılar",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 132
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 135
+      },
+      {
+        "type": "button",
+        "label": "Kompakt",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Rahat",
+        "line": 176
+      },
+      {
+        "type": "button",
+        "label": "TRY",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "Değişiklikleri Kaydet",
+        "line": 222
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 124
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 125
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 128
+      },
+      {
+        "type": "link",
+        "label": "Genel",
+        "href": "#",
+        "line": 144
+      },
+      {
+        "type": "link",
+        "label": "Tema",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "Hatırlatıcılar",
+        "href": "#",
+        "line": 152
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 132
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 135
+      },
+      {
+        "type": "button",
+        "label": "Kompakt",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Rahat",
+        "line": 176
+      },
+      {
+        "type": "button",
+        "label": "TRY",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "Değişiklikleri Kaydet",
+        "line": 222
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 13,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "0bd5493cdc564d77bf88ba0ecb3676f6",
+    "screenTitle": "Yeni Lead Ekleme Modalı",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 137
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 140
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead Ekle",
+        "line": 152
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 215
+      },
+      {
+        "type": "button",
+        "label": "Vazgeç",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "+ Lead Ekle",
+        "line": 280
+      },
+      {
+        "type": "input",
+        "label": "Örn: Ayşe Yılmaz",
+        "inputType": "text",
+        "placeholder": "Örn: Ayşe Yılmaz",
+        "line": 224
+      },
+      {
+        "type": "input",
+        "label": "Örn: TechFlow A.Ş.",
+        "inputType": "text",
+        "placeholder": "Örn: TechFlow A.Ş.",
+        "line": 229
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 234
+      },
+      {
+        "type": "input",
+        "label": "0.00",
+        "inputType": "number",
+        "placeholder": "0.00",
+        "line": 248
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 254
+      },
+      {
+        "type": "input",
+        "label": "date",
+        "inputType": "date",
+        "line": 265
+      },
+      {
+        "type": "input",
+        "label": "Bu lead için planlanan sonraki adım nedir? Notlarınızı buraya ekleyin.",
+        "inputType": "textarea",
+        "placeholder": "Bu lead için planlanan sonraki adım nedir? Notlarınızı buraya ekleyin.",
+        "line": 272
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 137
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 140
+      },
+      {
+        "type": "button",
+        "label": "Yeni Lead Ekle",
+        "line": 152
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 215
+      },
+      {
+        "type": "button",
+        "label": "Vazgeç",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "+ Lead Ekle",
+        "line": 280
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Örn: Ayşe Yılmaz",
+        "inputType": "text",
+        "placeholder": "Örn: Ayşe Yılmaz",
+        "line": 224
+      },
+      {
+        "type": "input",
+        "label": "Örn: TechFlow A.Ş.",
+        "inputType": "text",
+        "placeholder": "Örn: TechFlow A.Ş.",
+        "line": 229
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 234
+      },
+      {
+        "type": "input",
+        "label": "0.00",
+        "inputType": "number",
+        "placeholder": "0.00",
+        "line": 248
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 254
+      },
+      {
+        "type": "input",
+        "label": "date",
+        "inputType": "date",
+        "line": 265
+      },
+      {
+        "type": "input",
+        "label": "Bu lead için planlanan sonraki adım nedir? Notlarınızı buraya ekleyin.",
+        "inputType": "textarea",
+        "placeholder": "Bu lead için planlanan sonraki adım nedir? Notlarınızı buraya ekleyin.",
+        "line": 272
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 13,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "47278c523a2b46459e5eb5af959eb9ea",
+    "screenTitle": "Profil ve Hesap Paneli",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 157
+      },
+      {
+        "type": "button",
+        "label": "Kapat",
+        "line": 235
+      },
+      {
+        "type": "button",
+        "label": "Çıkış Yap",
+        "line": 238
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 171
+      },
+      {
+        "type": "input",
+        "label": "email",
+        "inputType": "email",
+        "line": 175
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 187
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 213
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 224
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Adaylar",
+        "href": "#",
+        "line": 119
+      },
+      {
+        "type": "link",
+        "label": "Pipeline",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Analizler",
+        "href": "#",
+        "line": 121
+      },
+      {
+        "type": "link",
+        "label": "Ayarlar",
+        "href": "#",
+        "line": 122
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "close",
+        "line": 157
+      },
+      {
+        "type": "button",
+        "label": "Kapat",
+        "line": 235
+      },
+      {
+        "type": "button",
+        "label": "Çıkış Yap",
+        "line": 238
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 171
+      },
+      {
+        "type": "input",
+        "label": "email",
+        "inputType": "email",
+        "line": 175
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 187
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 213
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 224
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 12,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
