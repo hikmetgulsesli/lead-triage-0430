@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lead Triage - Analizler</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdbcd",
+                        "surface-container-low": "#f3f3fe",
+                        "background": "#faf8ff",
+                        "on-surface-variant": "#434655",
+                        "secondary-fixed": "#d5e3fc",
+                        "on-surface": "#191b23",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#dbe1ff",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#b4c5ff",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "on-background": "#191b23",
+                        "surface-variant": "#e1e2ed",
+                        "surface-container-high": "#e7e7f3",
+                        "primary-container": "#2563eb",
+                        "secondary-container": "#d5e3fc",
+                        "on-primary-fixed": "#00174b",
+                        "surface-container": "#ededf9",
+                        "secondary": "#515f74",
+                        "on-secondary-container": "#57657a",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#3a485b",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "surface-container-highest": "#e1e2ed",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#2e3039",
+                        "surface-tint": "#0053db",
+                        "primary": "#004ac6",
+                        "on-primary-container": "#eeefff",
+                        "surface": "#faf8ff",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "surface-bright": "#faf8ff",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#b9c7df",
+                        "on-tertiary-container": "#ffede6",
+                        "inverse-on-surface": "#f0f0fb",
+                        "tertiary": "#943700",
+                        "outline": "#737686",
+                        "on-secondary-fixed": "#0d1c2e",
+                        "surface-dim": "#d9d9e5",
+                        "tertiary-container": "#bc4800",
+                        "outline-variant": "#c3c6d7",
+                        "on-tertiary-fixed": "#360f00",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "base": "4px",
+                        "xl": "32px",
+                        "margin": "24px",
+                        "xs": "8px",
+                        "gutter": "16px",
+                        "lg": "24px",
+                        "md": "16px"
+                    },
+                    "fontFamily": {
+                        "label-bold": ["Inter"],
+                        "h3": ["Inter"],
+                        "h1": ["Inter"],
+                        "caption": ["Inter"],
+                        "body-main": ["Inter"],
+                        "body-large": ["Inter"],
+                        "h2": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-bold": ["12px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "h3": ["20px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "h1": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "caption": ["12px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "400" }],
+                        "body-main": ["14px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+                        "body-large": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h2": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col">
+<nav class="bg-surface-container-lowest w-full top-0 border-b border-surface-variant shadow-sm z-50">
+<div class="flex items-center justify-between px-8 h-[64px] w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<span class="font-h3 text-h3 text-on-surface tracking-tight">Lead Triage</span>
+<ul class="hidden md:flex h-full items-center gap-[32px] pt-[2px]">
+<li class="h-full flex items-center">
+<a class="text-on-surface-variant hover:text-on-surface font-body-main text-body-main transition-all duration-200 ease-in-out" href="#">Leads</a>
+</li>
+<li class="h-full flex items-center">
+<a class="text-on-surface-variant hover:text-on-surface font-body-main text-body-main transition-all duration-200 ease-in-out" href="#">Pipeline</a>
+</li>
+<li class="h-full flex items-center border-b-2 border-primary">
+<a class="text-primary font-label-bold text-label-bold transition-all duration-200 ease-in-out" href="#">Insights</a>
+</li>
+<li class="h-full flex items-center">
+<a class="text-on-surface-variant hover:text-on-surface font-body-main text-body-main transition-all duration-200 ease-in-out" href="#">Settings</a>
+</li>
+</ul>
+</div>
+<div class="flex items-center gap-[16px]">
+<button class="text-on-surface-variant hover:bg-surface-container-low rounded-lg p-[8px] transition-all duration-200 ease-in-out flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="notifications">notifications</span>
+</button>
+<button class="text-on-surface-variant hover:bg-surface-container-low rounded-lg p-[8px] transition-all duration-200 ease-in-out flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" data-icon="search">search</span>
+</button>
+<div class="h-[32px] w-[32px] rounded-full bg-surface-variant overflow-hidden ml-[8px]">
+<img alt="User profile" class="h-full w-full object-cover" data-alt="A professional headshot of a corporate user, neutral lighting, clean white background, high quality photography, modern light-mode ui aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLHimCLrCNlnDGKslDA4cxZe_y0iGvIAspFBpuruVEG_OuMGjUAJaCxyCbSDy1a_Ur9cudWarYOHJYcCNLmSdekxnG81-j7aBTL7-qJ_EYy-yYg_DOQMlGOiYj0Ko7U6PYAhb_fvDP600znBvmtZfcAi7EjbNE8UiJ17AqTm5EYtFdfPRIRxCVh44Gh-U2JZUK5MnW5rAnXQElpW-uLeBA_iZznnvmLwwk-6FY2FE18FjfcXyKLGzeDZ79iGHeK7CxBy3yvbsIBONZ"/>
+</div>
+</div>
+</div>
+</nav>
+<main class="flex-grow w-full max-w-7xl mx-auto px-8 py-xl flex flex-col gap-xl">
+<header class="flex flex-col gap-base">
+<h1 class="font-h1 text-h1 text-on-surface">Analizler</h1>
+<p class="font-body-large text-body-large text-on-surface-variant">Operasyonel metrikleriniz ve süreç performansınız.</p>
+</header>
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-lg shadow-[0_1px_3px_rgba(0,0,0,0.05)] flex flex-col gap-xs relative overflow-hidden group">
+<div class="flex items-center gap-xs text-on-surface-variant mb-base">
+<span class="material-symbols-outlined text-[20px]" data-icon="group">group</span>
+<h3 class="font-body-main text-body-main">Toplam Aday</h3>
+</div>
+<div class="font-h1 text-h1 text-on-surface">42</div>
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-primary/10 group-hover:bg-primary transition-colors duration-300"></div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-lg shadow-[0_1px_3px_rgba(0,0,0,0.05)] flex flex-col gap-xs relative overflow-hidden group">
+<div class="flex items-center gap-xs text-on-surface-variant mb-base">
+<span class="material-symbols-outlined text-[20px]" data-icon="trending_up">trending_up</span>
+<h3 class="font-body-main text-body-main">Kazanılan Değer</h3>
+</div>
+<div class="font-h1 text-h1 text-on-surface">₺125.000</div>
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-primary/10 group-hover:bg-primary transition-colors duration-300"></div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-lg shadow-[0_1px_3px_rgba(0,0,0,0.05)] flex flex-col gap-xs relative overflow-hidden group">
+<div class="flex items-center gap-xs text-on-surface-variant mb-base">
+<span class="material-symbols-outlined text-[20px]" data-icon="trending_down">trending_down</span>
+<h3 class="font-body-main text-body-main">Kaybedilen Değer</h3>
+</div>
+<div class="font-h1 text-h1 text-on-surface">₺15.000</div>
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-error/10 group-hover:bg-error transition-colors duration-300"></div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-lg shadow-[0_1px_3px_rgba(0,0,0,0.05)] flex flex-col gap-xs relative overflow-hidden group">
+<div class="flex items-center gap-xs text-on-surface-variant mb-base">
+<span class="material-symbols-outlined text-[20px]" data-icon="calendar_today">calendar_today</span>
+<h3 class="font-body-main text-body-main">Haftalık Takip</h3>
+</div>
+<div class="font-h1 text-h1 text-on-surface">8 <span class="font-body-large text-body-large text-on-surface-variant">Aday</span></div>
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-primary/10 group-hover:bg-primary transition-colors duration-300"></div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-lg shadow-[0_1px_3px_rgba(0,0,0,0.05)] flex flex-col gap-xs relative overflow-hidden group">
+<div class="flex items-center gap-xs text-on-surface-variant mb-base">
+<span class="material-symbols-outlined text-[20px]" data-icon="pie_chart">pie_chart</span>
+<h3 class="font-body-main text-body-main">Dönüşüm Oranı</h3>
+</div>
+<div class="font-h1 text-h1 text-on-surface">%24</div>
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-primary/10 group-hover:bg-primary transition-colors duration-300"></div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant p-lg shadow-[0_1px_3px_rgba(0,0,0,0.05)] flex flex-col gap-xs relative overflow-hidden group">
+<div class="flex items-center gap-xs text-on-surface-variant mb-base">
+<span class="material-symbols-outlined text-[20px]" data-icon="calculate">calculate</span>
+<h3 class="font-body-main text-body-main">Ortalama Aday Değeri</h3>
+</div>
+<div class="font-h1 text-h1 text-on-surface">₺8.500</div>
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-primary/10 group-hover:bg-primary transition-colors duration-300"></div>
+</div>
+</section>
+</main>
+</body></html>

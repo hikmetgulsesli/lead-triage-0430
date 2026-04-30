@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lead Triage 0430 - Pipeline</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-container": "#d5e3fc",
+                        "surface-tint": "#0053db",
+                        "surface-container-highest": "#e1e2ed",
+                        "outline": "#737686",
+                        "on-tertiary-container": "#ffede6",
+                        "surface-container": "#ededf9",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#c3c6d7",
+                        "on-surface": "#191b23",
+                        "primary": "#004ac6",
+                        "on-primary-container": "#eeefff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#0d1c2e",
+                        "surface-container-high": "#e7e7f3",
+                        "on-tertiary-fixed": "#360f00",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#d9d9e5",
+                        "on-error-container": "#93000a",
+                        "background": "#faf8ff",
+                        "tertiary-fixed": "#ffdbcd",
+                        "tertiary-container": "#bc4800",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#b4c5ff",
+                        "secondary-fixed-dim": "#b9c7df",
+                        "inverse-on-surface": "#f0f0fb",
+                        "surface-variant": "#e1e2ed",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#2563eb",
+                        "on-secondary-container": "#57657a",
+                        "inverse-surface": "#2e3039",
+                        "secondary": "#515f74",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#00174b",
+                        "on-background": "#191b23",
+                        "surface-container-low": "#f3f3fe",
+                        "on-surface-variant": "#434655",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#d5e3fc",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "surface": "#faf8ff",
+                        "surface-bright": "#faf8ff",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "tertiary": "#943700",
+                        "on-secondary-fixed-variant": "#3a485b",
+                        "primary-fixed": "#dbe1ff"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "sm": "12px",
+                        "margin": "24px",
+                        "base": "4px",
+                        "xl": "32px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "gutter": "16px",
+                        "xs": "8px"
+                    },
+                    fontFamily: {
+                        "h3": ["Inter"],
+                        "body-main": ["Inter"],
+                        "caption": ["Inter"],
+                        "body-large": ["Inter"],
+                        "label-bold": ["Inter"],
+                        "h2": ["Inter"],
+                        "h1": ["Inter"]
+                    },
+                    fontSize: {
+                        "h3": ["20px", { lineHeight: "1.4", letterSpacing: "0", fontWeight: "600" }],
+                        "body-main": ["14px", { lineHeight: "1.5", letterSpacing: "0", fontWeight: "400" }],
+                        "caption": ["12px", { lineHeight: "1.4", letterSpacing: "0", fontWeight: "400" }],
+                        "body-large": ["16px", { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" }],
+                        "label-bold": ["12px", { lineHeight: "1", letterSpacing: "0.02em", fontWeight: "600" }],
+                        "h2": ["24px", { lineHeight: "1.3", letterSpacing: "-0.01em", fontWeight: "600" }],
+                        "h1": ["32px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .kanban-scroll::-webkit-scrollbar { height: 8px; }
+        .kanban-scroll::-webkit-scrollbar-track { background: #f3f3fe; border-radius: 4px; }
+        .kanban-scroll::-webkit-scrollbar-thumb { background: #c3c6d7; border-radius: 4px; }
+        .kanban-scroll::-webkit-scrollbar-thumb:hover { background: #737686; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-main text-body-main min-h-screen flex flex-col antialiased">
+<!-- TopNavBar (Shared Component) -->
+<header class="flex items-center justify-between px-lg h-16 w-full bg-surface-container-lowest z-50 sticky top-0 border-b border-outline-variant shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+<div class="flex items-center gap-xl h-full">
+<div class="font-h3 text-h3 text-on-surface tracking-tight">Lead Triage 0430</div>
+<nav class="hidden md:flex items-end h-full gap-lg">
+<!-- Inactive Tab -->
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors pb-4 mt-4 font-body-main text-body-main hover:bg-surface-container-low rounded-t-md px-2" href="#">Adaylar</a>
+<!-- Active Tab -->
+<a class="text-primary border-b-2 border-primary pb-4 mt-4 font-body-main text-body-main font-medium px-2" href="#">Pipeline</a>
+<!-- Inactive Tabs -->
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors pb-4 mt-4 font-body-main text-body-main hover:bg-surface-container-low rounded-t-md px-2" href="#">Analizler</a>
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors pb-4 mt-4 font-body-main text-body-main hover:bg-surface-container-low rounded-t-md px-2" href="#">Ayarlar</a>
+</nav>
+</div>
+<div class="flex items-center gap-sm">
+<button aria-label="Notifications" class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-md transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button aria-label="Account" class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-md transition-colors">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col w-full px-lg py-margin overflow-hidden">
+<!-- Page Header -->
+<div class="flex items-center justify-between mb-margin shrink-0">
+<div>
+<h1 class="font-h2 text-h2 text-on-surface">Pipeline Görünümü</h1>
+<p class="font-body-main text-body-main text-on-surface-variant mt-1">Sürükle ve bırak ile aday durumlarını güncelleyin.</p>
+</div>
+<div class="flex gap-sm">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline-variant text-[20px]">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg font-body-main text-body-main text-on-surface focus:border-primary focus:ring-1 focus:ring-primary w-64 outline-none transition-all" placeholder="Aday veya şirket ara..." type="text"/>
+</div>
+<button class="flex items-center gap-xs px-4 py-2 bg-primary text-on-primary font-label-bold text-label-bold rounded-lg hover:bg-surface-tint transition-colors">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                    Yeni Aday
+                </button>
+</div>
+</div>
+<!-- Kanban Board Area -->
+<div class="flex-1 overflow-x-auto kanban-scroll pb-sm">
+<div class="flex gap-gutter h-full items-start min-w-max pb-4">
+<!-- Column 1: YENİ -->
+<div class="flex flex-col w-[300px] shrink-0 h-full max-h-full">
+<div class="flex items-center justify-between p-sm mb-sm bg-surface-container-lowest border border-outline-variant rounded-lg border-t-4 border-t-primary shadow-[0_1px_2px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-xs">
+<h3 class="font-label-bold text-label-bold text-on-surface">YENİ</h3>
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded-full font-caption text-caption">3</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-surface-variant">₺45.000</span>
+</div>
+<div class="flex flex-col gap-sm overflow-y-auto pr-1 pb-4">
+<!-- Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:border-primary/50 transition-colors cursor-grab">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-body-large text-body-large font-medium text-on-surface">Acme Corp İletişimi</h4>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">more_vert</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mb-4">Ahmet Yılmaz • Kurumsal</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-bold text-label-bold text-on-surface">₺15.000</span>
+<div class="flex items-center gap-xs text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                                    Bugün
+                                </div>
+</div>
+</div>
+<!-- Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:border-primary/50 transition-colors cursor-grab">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-body-large text-body-large font-medium text-on-surface">Global Lojistik Genişleme</h4>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">more_vert</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mb-4">Zeynep Kaya • KOBİ</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-bold text-label-bold text-on-surface">₺22.000</span>
+<div class="flex items-center gap-xs text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                                    Dün
+                                </div>
+</div>
+</div>
+<!-- Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:border-primary/50 transition-colors cursor-grab">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-body-large text-body-large font-medium text-on-surface">Tech Start Projesi</h4>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">more_vert</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mb-4">Can Öztürk • Teknoloji</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-bold text-label-bold text-on-surface">₺8.000</span>
+<div class="flex items-center gap-xs text-error font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                                    Acil
+                                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 2: İLETİŞİMDE -->
+<div class="flex flex-col w-[300px] shrink-0 h-full max-h-full">
+<div class="flex items-center justify-between p-sm mb-sm bg-surface-container-lowest border border-outline-variant rounded-lg border-t-4 border-t-tertiary shadow-[0_1px_2px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-xs">
+<h3 class="font-label-bold text-label-bold text-on-surface">İLETİŞİMDE</h3>
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded-full font-caption text-caption">2</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-surface-variant">₺60.000</span>
+</div>
+<div class="flex flex-col gap-sm overflow-y-auto pr-1 pb-4">
+<!-- Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:border-primary/50 transition-colors cursor-grab">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-body-large text-body-large font-medium text-on-surface">Beta A.Ş. Danışmanlık</h4>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">more_vert</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mb-4">Elif Demir • Finans</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-bold text-label-bold text-on-surface">₺45.000</span>
+<div class="flex items-center gap-xs text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">mail</span>
+                                    Bekleniyor
+                                </div>
+</div>
+</div>
+<!-- Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:border-primary/50 transition-colors cursor-grab">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-body-large text-body-large font-medium text-on-surface">Otel Zinciri Altyapı</h4>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">more_vert</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mb-4">Murat Can • Turizm</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-bold text-label-bold text-on-surface">₺15.000</span>
+<div class="flex items-center gap-xs text-primary font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">call</span>
+                                    Arama Planlandı
+                                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 3: TEKLİF VERİLDİ -->
+<div class="flex flex-col w-[300px] shrink-0 h-full max-h-full">
+<div class="flex items-center justify-between p-sm mb-sm bg-surface-container-lowest border border-outline-variant rounded-lg border-t-4 border-t-secondary shadow-[0_1px_2px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-xs">
+<h3 class="font-label-bold text-label-bold text-on-surface">TEKLİF VERİLDİ</h3>
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded-full font-caption text-caption">1</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-surface-variant">₺120.000</span>
+</div>
+<div class="flex flex-col gap-sm overflow-y-auto pr-1 pb-4">
+<!-- Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:border-primary/50 transition-colors cursor-grab">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-body-large text-body-large font-medium text-on-surface">Mega Holding ERP</h4>
+<span class="material-symbols-outlined text-outline-variant text-[18px]">more_vert</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mb-4">Ayşe Çelik • Holding</p>
+<div class="mt-2 mb-3 w-full bg-surface-container-high rounded-full h-1.5">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 75%"></div>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-bold text-label-bold text-on-surface">₺120.000</span>
+<div class="flex items-center gap-xs text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">description</span>
+                                    İncelemede
+                                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 4: KAZANILDI -->
+<div class="flex flex-col w-[300px] shrink-0 h-full max-h-full">
+<div class="flex items-center justify-between p-sm mb-sm bg-surface-container-lowest border border-outline-variant rounded-lg border-t-4 border-t-surface-tint shadow-[0_1px_2px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-xs">
+<h3 class="font-label-bold text-label-bold text-on-surface">KAZANILDI</h3>
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded-full font-caption text-caption">1</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-surface-variant">₺85.000</span>
+</div>
+<div class="flex flex-col gap-sm overflow-y-auto pr-1 pb-4">
+<!-- Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-md shadow-[0_1px_3px_rgba(0,0,0,0.05)] hover:border-primary/50 transition-colors cursor-grab opacity-80">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-body-large text-body-large font-medium text-on-surface line-through decoration-surface-tint/50">Delta Medikal</h4>
+<span class="material-symbols-outlined text-surface-tint text-[18px]">check_circle</span>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mb-4">Kemal Kılıç • Sağlık</p>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-label-bold text-label-bold text-on-surface">₺85.000</span>
+<span class="bg-secondary-container text-surface-tint px-2 py-1 rounded font-label-bold text-[10px] uppercase tracking-wider">Tamamlandı</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 5: KAYBEDİLDİ -->
+<div class="flex flex-col w-[300px] shrink-0 h-full max-h-full">
+<div class="flex items-center justify-between p-sm mb-sm bg-surface-container-lowest border border-outline-variant rounded-lg border-t-4 border-t-error shadow-[0_1px_2px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-xs">
+<h3 class="font-label-bold text-label-bold text-on-surface">KAYBEDİLDİ</h3>
+<span class="bg-surface-container-high text-on-surface px-2 py-0.5 rounded-full font-caption text-caption">0</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-surface-variant">₺0</span>
+</div>
+<div class="flex flex-col gap-sm overflow-y-auto pr-1 pb-4 min-h-[100px] items-center justify-center border-2 border-dashed border-outline-variant/30 rounded-lg bg-surface-container-low/50">
+<span class="font-body-main text-body-main text-outline-variant italic">Kayıt yok</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

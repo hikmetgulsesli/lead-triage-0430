@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>İş Geliştirme Analizleri - Lead Triage 0430</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#d5e3fc",
+                    "surface-tint": "#0053db",
+                    "surface-container-highest": "#e1e2ed",
+                    "outline": "#737686",
+                    "on-tertiary-container": "#ffede6",
+                    "surface-container": "#ededf9",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c3c6d7",
+                    "on-surface": "#191b23",
+                    "primary": "#004ac6",
+                    "on-primary-container": "#eeefff",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#0d1c2e",
+                    "surface-container-high": "#e7e7f3",
+                    "on-tertiary-fixed": "#360f00",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#d9d9e5",
+                    "on-error-container": "#93000a",
+                    "background": "#faf8ff",
+                    "tertiary-fixed": "#ffdbcd",
+                    "tertiary-container": "#bc4800",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#b4c5ff",
+                    "secondary-fixed-dim": "#b9c7df",
+                    "inverse-on-surface": "#f0f0fb",
+                    "surface-variant": "#e1e2ed",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#2563eb",
+                    "on-secondary-container": "#57657a",
+                    "inverse-surface": "#2e3039",
+                    "secondary": "#515f74",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#00174b",
+                    "on-background": "#191b23",
+                    "surface-container-low": "#f3f3fe",
+                    "on-surface-variant": "#434655",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed": "#d5e3fc",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "surface": "#faf8ff",
+                    "surface-bright": "#faf8ff",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "tertiary": "#943700",
+                    "on-secondary-fixed-variant": "#3a485b",
+                    "primary-fixed": "#dbe1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "sm": "12px",
+                    "margin": "24px",
+                    "base": "4px",
+                    "xl": "32px",
+                    "md": "16px",
+                    "lg": "24px",
+                    "gutter": "16px",
+                    "xs": "8px"
+            },
+            "fontFamily": {
+                    "h3": [
+                            "Inter"
+                    ],
+                    "body-main": [
+                            "Inter"
+                    ],
+                    "caption": [
+                            "Inter"
+                    ],
+                    "body-large": [
+                            "Inter"
+                    ],
+                    "label-bold": [
+                            "Inter"
+                    ],
+                    "h2": [
+                            "Inter"
+                    ],
+                    "h1": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "h3": [
+                            "20px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "letterSpacing": "0",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-main": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.5",
+                                    "letterSpacing": "0",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "caption": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "letterSpacing": "0",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-large": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "letterSpacing": "0",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-bold": [
+                            "12px",
+                            {
+                                    "lineHeight": "1",
+                                    "letterSpacing": "0.02em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "h2": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "h1": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-main antialiased min-h-screen">
+<!-- TopNavBar (Shared Component) -->
+<nav class="docked full-width top-0 border-b flex items-center justify-between px-6 h-16 w-full z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 shadow-sm dark:shadow-none font-['Inter'] text-sm antialiased text-blue-600 dark:text-blue-400">
+<div class="flex items-center gap-8">
+<div class="text-lg font-bold tracking-tight text-slate-900 dark:text-slate-50">
+                Lead Triage 0430
+            </div>
+<div class="hidden md:flex items-center gap-6 h-full pt-4">
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200 ease-in-out hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-md px-3 py-2 -mt-2" href="#">Adaylar</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200 ease-in-out hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-md px-3 py-2 -mt-2" href="#">Pipeline</a>
+<a class="text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400 pb-4 mt-2 font-medium px-3" href="#">Analizler</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200 ease-in-out hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-md px-3 py-2 -mt-2" href="#">Ayarlar</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-500 hover:text-slate-900 duration-200 ease-in-out hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-md p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">notifications</span>
+</button>
+<button class="text-slate-500 hover:text-slate-900 duration-200 ease-in-out hover:bg-slate-50 dark:hover:bg-slate-800/50 rounded-md p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">account_circle</span>
+</button>
+</div>
+</nav>
+<!-- Main Canvas -->
+<main class="max-w-7xl mx-auto px-6 py-xl">
+<!-- Header -->
+<header class="mb-lg">
+<h1 class="font-h1 text-h1 text-on-surface">İş Geliştirme Analizleri</h1>
+</header>
+<!-- Metrics Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Metric Card: TOPLAM ADAY -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-on-surface-variant">TOPLAM ADAY</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 0; font-size: 20px;">group</span>
+</div>
+<div class="font-h2 text-h2 text-on-surface mt-xs">
+                    42
+                </div>
+</div>
+<!-- Metric Card: KAZANILAN DEĞER -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-on-surface-variant">KAZANILAN DEĞER</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0; font-size: 20px;">payments</span>
+</div>
+<div class="font-h2 text-h2 text-on-surface mt-xs">
+                    ₺125.000
+                </div>
+</div>
+<!-- Metric Card: KAYBEDİLEN DEĞER -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-on-surface-variant">KAYBEDİLEN DEĞER</span>
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 0; font-size: 20px;">trending_down</span>
+</div>
+<div class="font-h2 text-h2 text-on-surface mt-xs">
+                    ₺15.000
+                </div>
+</div>
+<!-- Metric Card: HAFTALIK TAKİP -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-on-surface-variant">HAFTALIK TAKİP</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 0; font-size: 20px;">calendar_today</span>
+</div>
+<div class="font-h2 text-h2 text-on-surface mt-xs">
+                    8 Aday
+                </div>
+</div>
+<!-- Metric Card: DÖNÜŞÜM ORANI -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-on-surface-variant">DÖNÜŞÜM ORANI</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0; font-size: 20px;">percent</span>
+</div>
+<div class="font-h2 text-h2 text-on-surface mt-xs">
+                    %24
+                </div>
+</div>
+<!-- Metric Card: ORTALAMA ADAY DEĞERİ -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md flex flex-col gap-sm shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-on-surface-variant">ORTALAMA ADAY DEĞERİ</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 0; font-size: 20px;">monitoring</span>
+</div>
+<div class="font-h2 text-h2 text-on-surface mt-xs">
+                    ₺8.500
+                </div>
+</div>
+</div>
+</main>
+</body></html>

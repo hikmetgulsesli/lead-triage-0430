@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lead Triage 0430 - Depolama Hatası</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface-variant": "#434655",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed-dim": "#ffb596",
+                      "secondary-fixed": "#d5e3fc",
+                      "tertiary": "#943700",
+                      "on-surface": "#191b23",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed": "#00174b",
+                      "on-secondary-fixed-variant": "#3a485b",
+                      "on-error-container": "#93000a",
+                      "on-primary": "#ffffff",
+                      "surface-container": "#ededf9",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "on-secondary-fixed": "#0d1c2e",
+                      "surface-dim": "#d9d9e5",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "surface-variant": "#e1e2ed",
+                      "on-primary-container": "#eeefff",
+                      "on-tertiary-fixed-variant": "#7d2d00",
+                      "on-tertiary-fixed": "#360f00",
+                      "error-container": "#ffdad6",
+                      "surface-bright": "#faf8ff",
+                      "outline-variant": "#c3c6d7",
+                      "surface-container-highest": "#e1e2ed",
+                      "secondary-container": "#d5e3fc",
+                      "secondary": "#515f74",
+                      "inverse-on-surface": "#f0f0fb",
+                      "background": "#faf8ff",
+                      "primary-container": "#2563eb",
+                      "surface-tint": "#0053db",
+                      "outline": "#737686",
+                      "inverse-surface": "#2e3039",
+                      "error": "#ba1a1a",
+                      "primary-fixed": "#dbe1ff",
+                      "on-tertiary-container": "#ffede6",
+                      "on-secondary-container": "#57657a",
+                      "surface-container-high": "#e7e7f3",
+                      "surface": "#faf8ff",
+                      "tertiary-fixed": "#ffdbcd",
+                      "inverse-primary": "#b4c5ff",
+                      "surface-container-low": "#f3f3fe",
+                      "surface-container-lowest": "#ffffff",
+                      "on-background": "#191b23",
+                      "tertiary-container": "#bc4800",
+                      "primary": "#004ac6",
+                      "secondary-fixed-dim": "#b9c7df"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "xs": "8px",
+                      "sm": "12px",
+                      "xl": "32px",
+                      "base": "4px",
+                      "gutter": "16px",
+                      "margin": "24px",
+                      "md": "16px",
+                      "lg": "24px"
+              },
+              "fontFamily": {
+                      "h1": ["Inter"],
+                      "h2": ["Inter"],
+                      "body-large": ["Inter"],
+                      "h3": ["Inter"],
+                      "body-main": ["Inter"],
+                      "label-bold": ["Inter"],
+                      "caption": ["Inter"]
+              },
+              "fontSize": {
+                      "h1": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "h2": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "body-large": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                      "h3": ["20px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600"}],
+                      "body-main": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                      "label-bold": ["12px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                      "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-main antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between px-6 h-16 w-full bg-surface z-50 docked full-width top-0 border-b border-outline-variant shadow-sm shrink-0">
+<div class="flex items-center gap-xl">
+<span class="text-lg font-bold tracking-tight text-on-surface">Lead Triage 0430</span>
+<nav class="hidden md:flex items-center gap-margin">
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-body-main text-body-main" href="#">Adaylar</a>
+<a class="text-primary border-b-2 border-primary pb-[20px] mt-[20px] font-body-main text-body-main" href="#">Pipeline</a>
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-body-main text-body-main" href="#">Analizler</a>
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-body-main text-body-main" href="#">Ayarlar</a>
+</nav>
+</div>
+<div class="flex items-center gap-sm">
+<button class="p-xs text-on-surface-variant hover:bg-surface-variant rounded-md transition-colors duration-200 ease-in-out">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-xs text-on-surface-variant hover:bg-surface-variant rounded-md transition-colors duration-200 ease-in-out">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Error Banner -->
+<div class="w-full bg-error-container border-b border-error px-6 py-sm flex items-center justify-between shrink-0">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-error" data-icon="error" style="font-variation-settings: 'FILL' 1;">error</span>
+<p class="font-body-main text-body-main text-on-error-container">Veriler kaydedilemedi. Depolama alanı dolu olabilir.</p>
+</div>
+<div class="flex items-center gap-sm">
+<button class="font-label-bold text-label-bold text-error hover:bg-white/20 px-sm py-xs rounded transition-colors border border-error">Tekrar Dene</button>
+<button class="font-label-bold text-label-bold bg-error text-on-error hover:bg-error/90 px-sm py-xs rounded transition-colors">Yerel Veriyi Temizle</button>
+</div>
+</div>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex overflow-hidden">
+<!-- Canvas Area -->
+<div class="flex-1 p-margin overflow-y-auto">
+<div class="max-w-6xl mx-auto space-y-margin">
+<div class="flex items-center justify-between">
+<h1 class="font-h1 text-h1 text-on-surface">Pipeline Genel Bakış</h1>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-margin">
+<!-- Placeholder Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-margin shadow-[1px_3px_5px_rgba(0,0,0,0.05)]">
+<h2 class="font-h3 text-h3 text-on-surface mb-sm">Yeni Adaylar</h2>
+<p class="font-body-main text-body-main text-on-surface-variant mb-margin">Son 24 saat içinde sisteme giren lead'ler.</p>
+<div class="flex items-center justify-between border-t border-outline-variant pt-sm">
+<span class="font-h2 text-h2 text-primary">42</span>
+<span class="material-symbols-outlined text-outline" data-icon="trending_up">trending_up</span>
+</div>
+</div>
+<!-- Placeholder Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-margin shadow-[1px_3px_5px_rgba(0,0,0,0.05)]">
+<h2 class="font-h3 text-h3 text-on-surface mb-sm">Bekleyen Onaylar</h2>
+<p class="font-body-main text-body-main text-on-surface-variant mb-margin">Satış ekibi tarafından incelenmeyi bekleyenler.</p>
+<div class="flex items-center justify-between border-t border-outline-variant pt-sm">
+<span class="font-h2 text-h2 text-tertiary">18</span>
+<span class="material-symbols-outlined text-outline" data-icon="schedule">schedule</span>
+</div>
+</div>
+<!-- Placeholder Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-margin shadow-[1px_3px_5px_rgba(0,0,0,0.05)]">
+<h2 class="font-h3 text-h3 text-on-surface mb-sm">Kapanan Satışlar</h2>
+<p class="font-body-main text-body-main text-on-surface-variant mb-margin">Bu hafta başarıyla sonuçlandırılan anlaşmalar.</p>
+<div class="flex items-center justify-between border-t border-outline-variant pt-sm">
+<span class="font-h2 text-h2 text-primary-fixed-dim">12</span>
+<span class="material-symbols-outlined text-outline" data-icon="check_circle">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Empty State for Visual Balance -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-xl text-center shadow-[1px_3px_5px_rgba(0,0,0,0.05)] flex flex-col items-center justify-center min-h-[300px]">
+<span class="material-symbols-outlined text-outline text-[48px] mb-margin" data-icon="data_usage">data_usage</span>
+<h3 class="font-h2 text-h2 text-on-surface mb-sm">Veri Senkronizasyonu Bekleniyor</h3>
+<p class="font-body-main text-body-main text-on-surface-variant max-w-md mx-auto">Sistem verileri güncellenemiyor. Lütfen yukarıdaki hata mesajındaki yönergeleri izleyerek depolama sorununu çözün.</p>
+</div>
+</div>
+</div>
+</main>
+</body></html>

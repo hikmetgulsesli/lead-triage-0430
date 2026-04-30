@@ -1,0 +1,206 @@
+# Ürün Gereksinimleri Dokümanı: Lead Triage 0430
+
+## 1. Genel Bakış
+
+Lead Triage 0430, freelancerların potansiyel müşteri (lead) adaylarını takip etmesi, triyaj etmesi ve dönüşüm hunisinde yönetmesi için tasarlanmış kompakt bir web uygulamasıdır. Uygulama, gerçek bir SaaS/operasyon aracı gibi çalışır; landing sayfası yoktur, ilk ekran doğrudan lead listesidir. Arayüz dili Türkçedir. Hedef kitle: bireysel freelancerlar ve küçük ekipler.
+
+## 2. Hedefler
+
+1. Freelancerların tüm potansiyel müşteri adaylarını tek bir ekrandan yönetmesini sağlamak.
+2. Lead'lerin durum değişimini (Yeni, İletişimde, Teklif, Kazanıldı, Kaybedildi) hızlıca takip etmek.
+3. Pipeline ve Insights görünümleriyle iş geliştirme performansını ölçülebilir kılmak.
+4. localStorage tabanlı persistence ile tarayıcıda veri kalıcılığı sağlamak, offline-first deneyim sunmak.
+5. Mobil cihazlardan tam responsive erişim desteklemek (320px+).
+6. Erişilebilirlik standartlarına (WCAG 2.1 AA) uygun klavye navigasyonu ve ekran okuyucu desteği sağlamak.
+
+## 3. Tech Stack Detayı
+
+- **Framework:** React 18 (SPA)
+- **Build Aracı:** Vite 5
+- **Dil:** TypeScript 5 (strict mode)
+- **Styling:** Tailwind CSS 3.4
+- **State Yönetimi:** React useState / useReducer (global state AppContext ile)
+- **Persistence:** localStorage (leads, settings, user profile)
+- **Routing:** React Router 6 (HashRouter veya MemoryRouter - SPA içi sekme geçişleri)
+- **Icons:** Lucide React (asla emoji kullanılmaz)
+- **UI Bileşenleri:** Radix UI primitives (Dialog, DropdownMenu, Switch) + Tailwind
+- **Lint/Format:** ESLint + Prettier
+
+## 4. Fonksiyonal Gereksinimler
+
+### 4.1 Üst Navigasyon / Sekmeler
+- Sabit üst bar; solda uygulama adı "Lead Triage", ortada sekme butonları: "Leads", "Pipeline", "Insights", "Settings".
+- Aktif sekme alt çizgi veya farklı arka planla belirginleştirilir.
+- Sağ üstte profil/account ikon butonu (Lucide User ikonu). Bu buton açılır panel (popover/drawer) tetikler.
+- Tüm butonlar gerçek state/route değiştirir; gerektiğinde disabled/aria-disabled olur.
+
+### 4.2 Profil / Account Paneli
+- Profil ikonuna tıklandığında sağdan kayan panel (drawer) veya ortada modal açılır.
+- Panel içeriği: kullanıcı adı (varsayılan "Freelancer"), timezone seçici (örn. Europe/Istanbul), e-posta bildirim toggle (Açık/Kapalı), uygulama içi hatırlatıcı toggle.
+- "Kapat" butonu paneli kapatır. "Çıkış" butonu yerel veriyi temizler ve uygulamayı sıfırlar.
+- Tüm kontroller state değiştirir; toggle'lar anında görsel geri bildirim verir.
+
+### 4.3 Lead Ekleme Formu
+- Erişim: "Yeni Lead" butonu veya "+" ikonu ile açılan modal.
+- Alanlar:
+  - Ad (zorunlu, metin, max 100 karakter)
+  - Şirket (opsiyonel, metin, max 100 karakter)
+  - Kaynak (dropdown: Upwork, LinkedIn, Referans, Soğuk Arama, Diğer)
+  - Tahmini Değer (opsiyonel, sayı, para birimi sembolü ile)
+  - Durum (dropdown: Yeni, İletişimde, Teklif Verildi, Kazanıldı, Kaybedildi)
+  - Sonraki Aksiyon (metin, max 200 karakter)
+  - Tarih (takvim input, sonraki kontak/aksiyon tarihi)
+- Hata mesajları (Türkçe, form altında kırmızı):
+  - "Lütfen lead adını girin"
+  - "Tahmini değer pozitif bir sayı olmalıdır"
+- Başarı durumunda modal kapanır, lead listesi güncellenir, toast/alert: "Lead başarıyla eklendi."
+
+### 4.4 Lead Kartları ve Listeleme
+- Ana ekranda lead kartları liste/kart görünümünde gösterilir.
+- Her kartta: ad, şirket, durum badge, tahmini değer, sonraki aksiyon, tarih.
+- Aksiyonlar:
+  - Durum değiştirme: hızlı durum dropdown'u (kart üzerinde inline).
+  - "İletişimde" olarak işaretleme: tek tıkla durumu "İletişimde" yapar.
+  - Düzenleme: karttaki kalem ikonu, Lead Düzenle modalı açar.
+  - Silme: çöp kutusu ikonu, silme onay modalı açar.
+- Arama çubuğu: ad, şirket veya kaynak içinde arama yapar (client-side).
+- Filtreleme: durum ve kaynak dropdown filtreleri. Varsayılan: tümünü göster.
+- Sıralama: değere göre, tarihe göre, ada göre.
+
+### 4.5 Pipeline Görünümü
+- Kanban tarzı sütunlar: Yeni, İletişimde, Teklif Verildi, Kazanıldı, Kaybedildi.
+- Her sütun altında toplam tahmini değer (örn. "₺45.000") gösterilir.
+- Lead kartları sütunlar arasında sürükle-bırak ile taşınabilir (opsiyonel, alternatif: durum dropdown'u).
+- Sütun başlığında lead sayısı badge'i.
+
+### 4.6 Insights Görünümü
+- Özet metrik kartları:
+  - Toplam Lead sayısı
+  - Kazanılan toplam değer
+  - Kaybedilen toplam değer
+  - Bu hafta takip edilecek lead sayısı (tarihi bugünden ±7 gün olanlar)
+  - Dönüşüm oranı (%)
+  - Ortalama lead değeri
+- Grafik/çizgi gerekmiyor; metrik kartlar yeterli.
+- Veri lead listesinden dinamik hesaplanır.
+
+### 4.7 Settings Görünümü
+- Tema yoğunluğu seçici: "Kompakt" (küçük padding) / "Rahat" (standart padding).
+- Para birimi seçici: TRY, USD, EUR — tüm değer alanları bu sembolü kullanır.
+- Hatırlatıcı ayarları: gün sayısı (1-30), varsayılan 7 gün.
+- Tüm kontroller anında state değiştirir ve localStorage'a yazar.
+- Kaydet butonu yerine anlık uygulama; kullanıcıya "Ayarlar kaydedildi" toastı.
+
+### 4.8 Persistence ve Hata Yönetimi
+- Tüm veri (leads, settings, profile) localStorage'a JSON olarak yazılır. Anahtar: `lead-triage-v1`.
+- localStorage yazma/okuma başarısız olursa:
+  - Ekranın üst kısmında kırmızı banner gösterilir: "Veriler kaydedilemedi. Depolama alanı dolu olabilir."
+  - Banner'da "Tekrar Dene" butonu: write işlemini tekrar dener.
+  - Banner'da "Yerel Veriyi Temizle" butonu: localStorage'daki uygulama verisini siler, uygulamayı boş state'e döndürür.
+  - Butonlar gerçek aksiyon tetikler; data-smoke-ignore kullanılmaz.
+
+## 5. Veri Modeli
+
+### 5.1 Lead Entity
+```typescript
+interface Lead {
+  id: string;           // UUID
+  name: string;         // zorunlu
+  company: string;      // opsiyonel
+  source: 'upwork' | 'linkedin' | 'referral' | 'cold_call' | 'other';
+  estimatedValue: number | null;  // opsiyonel, cent/penny cinsiz (örn. 45000)
+  status: 'new' | 'contacted' | 'proposal' | 'won' | 'lost';
+  nextAction: string;   // opsiyonel
+  followUpDate: string; // ISO date (YYYY-MM-DD)
+  createdAt: string;    // ISO timestamp
+  updatedAt: string;    // ISO timestamp
+}
+```
+
+### 5.2 Settings Entity
+```typescript
+interface AppSettings {
+  themeDensity: 'compact' | 'comfortable';
+  currency: 'TRY' | 'USD' | 'EUR';
+  reminderDays: number; // 1-30, default 7
+}
+```
+
+### 5.3 User Profile Entity
+```typescript
+interface UserProfile {
+  name: string;         // default "Freelancer"
+  timezone: string;     // default "Europe/Istanbul"
+  emailNotifications: boolean;
+  inAppReminders: boolean;
+}
+```
+
+### 5.4 localStorage Schema
+- Key: `lead-triage-v1`
+- Value: `{ leads: Lead[], settings: AppSettings, profile: UserProfile }`
+- Migrate: Key yoksa default state ile başlat.
+
+## 6. UI/UX Gereksinimleri
+
+### 6.1 Design System Seçimi
+- **Aesthetic:** minimal / corporate (sessiz, düzenli, taranabilir SaaS)
+- **Renk Paleti:**
+  - Primary: `#2563EB` (blue-600)
+  - Secondary: `#475569` (slate-600)
+  - Background: `#F8FAFC` (slate-50)
+  - Surface: `#FFFFFF` (beyaz kartlar)
+  - Text Primary: `#0F172A` (slate-900)
+  - Text Secondary: `#64748B` (slate-500)
+  - Border: `#E2E8F0` (slate-200)
+  - Success: `#16A34A` (green-600)
+  - Error: `#DC2626` (red-600)
+  - Warning: `#D97706` (amber-600)
+- **Tipografi:**
+  - Heading: Inter, 600-700 weight
+  - Body: Inter, 400 weight
+  - Scale: 12px/14px/16px/20px/24px/30px/36px
+- **Icon Library:** Lucide React
+
+### 6.2 Spacing & Components
+- Spacing scale: 4px / 8px / 12px / 16px / 24px / 32px / 48px / 64px
+- Border radius: 4px (butonlar, inputlar), 8px (kartlar, modallar), 12px (drawer/panel)
+- Shadow: `0 1px 3px rgba(0,0,0,0.1)` (kartlar), `0 10px 25px rgba(0,0,0,0.15)` (modallar)
+- Buton pattern: Primary (blue bg, beyaz text), Secondary (beyaz bg, border), Danger (red bg/outline).
+- Kart pattern: Beyaz arka plan, ince border, üstte başlık + badge, orta içerik, altta aksiyon butonları.
+- Input pattern: Slate-200 border, focus: blue-500 ring, padding 8px 12px, border-radius 4px.
+
+### 6.3 Durum Badge Renkleri (Lead Status)
+- Yeni: `#2563EB` (blue) — "Yeni"
+- İletişimde: `#7C3AED` (violet) — "İletişimde"
+- Teklif Verildi: `#D97706` (amber) — "Teklif"
+- Kazanıldı: `#16A34A` (green) — "Kazanıldı"
+- Kaybedildi: `#DC2626` (red) — "Kaybedildi"
+
+### 6.4 Boş Durum (Empty State)
+- İkon: Lucide Inbox (gray-300, 48px)
+- Başlık: "Henüz lead eklenmemiş"
+- Açıklama: "İlk potansiyel müşterinizi eklemek için 'Yeni Lead' butonuna tıklayın."
+- CTA butonu: "Yeni Lead Ekle" (primary)
+
+## 7. Non-Functional Requirements
+
+### 7.1 Performans
+- İlk yükleme < 2 saniye (local veri, sunucu isteği yok).
+- Sayfa/sekme geçişi < 100ms (client-side routing).
+- Bundle size hedefi: < 200KB gzipped.
+- localStorage read/write ana thread'i bloklamamalı; büyük veri setlerinde (>500 lead) useEffect ile async yaklaşım.
+
+### 7.2 Erişilebilirlik (WCAG 2.1 AA)
+- Klavye navigasyonu: Tüm interaktif elemanlar Tab ile erişilebilir.
+- Focus state: Mavi ring (`ring-2 ring-blue-500`) tüm buton, input, link elemanlarında.
+- ARIA labels: Icon-only butonlarda `aria-label` (örn. `aria-label="Düzenle"`).
+- Modal/Dialog: Açıldığında focus trap, `role="dialog"`, `aria-modal="true"`, Escape kapatır.
+- Kontrast: Tüm metinler 4.5:1 oranını sağlar. Badge'lerde beyaz metin + koyu arka plan.
+- Touch hedefleri: Min 44x44px (butonlar, kart aksiyonları).
+
+### 7.3 Tarayıcı Desteği
+- Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
+- iOS Safari 14+, Android Chrome 90+
+- Responsive: 320px (mobil) → 768px (tablet) → 1024px+ (desktop)
+- Mobil: üst nav hamburger menüye dönüşebilir veya scrollable tabs olabilir.

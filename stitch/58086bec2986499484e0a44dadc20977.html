@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lead Triage 0430 - Adaylar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#434655",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "secondary-fixed": "#d5e3fc",
+                        "tertiary": "#943700",
+                        "on-surface": "#191b23",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#00174b",
+                        "on-secondary-fixed-variant": "#3a485b",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#ededf9",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "on-secondary-fixed": "#0d1c2e",
+                        "surface-dim": "#d9d9e5",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "surface-variant": "#e1e2ed",
+                        "on-primary-container": "#eeefff",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "on-tertiary-fixed": "#360f00",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#faf8ff",
+                        "outline-variant": "#c3c6d7",
+                        "surface-container-highest": "#e1e2ed",
+                        "secondary-container": "#d5e3fc",
+                        "secondary": "#515f74",
+                        "inverse-on-surface": "#f0f0fb",
+                        "background": "#faf8ff",
+                        "primary-container": "#2563eb",
+                        "surface-tint": "#0053db",
+                        "outline": "#737686",
+                        "inverse-surface": "#2e3039",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#dbe1ff",
+                        "on-tertiary-container": "#ffede6",
+                        "on-secondary-container": "#57657a",
+                        "surface-container-high": "#e7e7f3",
+                        "surface": "#faf8ff",
+                        "tertiary-fixed": "#ffdbcd",
+                        "inverse-primary": "#b4c5ff",
+                        "surface-container-low": "#f3f3fe",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#191b23",
+                        "tertiary-container": "#bc4800",
+                        "primary": "#004ac6",
+                        "secondary-fixed-dim": "#b9c7df"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xs": "8px",
+                        "sm": "12px",
+                        "xl": "32px",
+                        "base": "4px",
+                        "gutter": "16px",
+                        "margin": "24px",
+                        "md": "16px",
+                        "lg": "24px"
+                    },
+                    "fontFamily": {
+                        "h1": ["Inter"],
+                        "h2": ["Inter"],
+                        "body-large": ["Inter"],
+                        "h3": ["Inter"],
+                        "body-main": ["Inter"],
+                        "label-bold": ["Inter"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "h1": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "h2": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-large": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "h3": ["20px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "body-main": ["14px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-bold": ["12px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "caption": ["12px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-main text-body-main min-h-screen antialiased">
+<!-- TopNavBar Component -->
+<header class="flex items-center justify-between px-6 h-16 w-full bg-white z-50 docked full-width top-0 border-b border-b border-slate-200 shadow-sm font-['Inter'] text-sm antialiased">
+<div class="flex items-center gap-gutter">
+<span class="text-lg font-bold tracking-tight text-slate-900">Lead Triage 0430</span>
+<nav class="hidden md:flex gap-gutter ml-lg">
+<a class="text-blue-600 border-b-2 border-blue-600 pb-4 mt-4" href="#">Adaylar</a>
+<a class="text-slate-500 font-medium hover:text-slate-900 transition-colors duration-200 ease-in-out hover:bg-slate-50 rounded-md px-sm py-xs" href="#">Pipeline</a>
+<a class="text-slate-500 font-medium hover:text-slate-900 transition-colors duration-200 ease-in-out hover:bg-slate-50 rounded-md px-sm py-xs" href="#">Analizler</a>
+<a class="text-slate-500 font-medium hover:text-slate-900 transition-colors duration-200 ease-in-out hover:bg-slate-50 rounded-md px-sm py-xs" href="#">Ayarlar</a>
+</nav>
+</div>
+<div class="flex items-center gap-sm">
+<button class="text-slate-500 hover:text-slate-900 hover:bg-slate-50 rounded-md p-xs transition-colors duration-200 ease-in-out">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="text-slate-500 hover:text-slate-900 hover:bg-slate-50 rounded-md p-xs transition-colors duration-200 ease-in-out">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-7xl mx-auto px-margin py-xl flex flex-col gap-xl">
+<!-- Header & Action Row -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-md">
+<h1 class="font-h1 text-h1 text-on-surface">Adaylar</h1>
+<button class="bg-primary hover:bg-primary-fixed-variant text-on-primary font-label-bold text-label-bold px-md py-sm rounded transition-colors flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]" data-icon="add">add</span>
+                Yeni Lead
+            </button>
+</div>
+<!-- Filters & Search Toolbar -->
+<div class="flex flex-col lg:flex-row gap-gutter p-md bg-surface-container-lowest rounded-lg border border-slate-200 shadow-[1px_3px_5px_rgba(0,0,0,0.05)]">
+<!-- Search -->
+<div class="relative flex-grow">
+<div class="absolute inset-y-0 left-0 pl-sm flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline text-[20px]" data-icon="search">search</span>
+</div>
+<input class="w-full pl-xl pr-sm py-sm rounded border border-slate-200 bg-surface-container-lowest text-on-surface focus:border-primary focus:ring-2 focus:ring-primary focus:outline-none transition-all" placeholder="Arama yap..." type="text"/>
+</div>
+<!-- Filters -->
+<div class="flex flex-col sm:flex-row gap-sm flex-shrink-0">
+<select class="rounded border border-slate-200 bg-surface-container-lowest text-on-surface py-sm px-md focus:border-primary focus:ring-2 focus:ring-primary focus:outline-none transition-all min-w-[150px]">
+<option disabled="" selected="" value="">Durum Filtrele</option>
+<option value="yeni">Yeni</option>
+<option value="iletisimde">İletişimde</option>
+</select>
+<select class="rounded border border-slate-200 bg-surface-container-lowest text-on-surface py-sm px-md focus:border-primary focus:ring-2 focus:ring-primary focus:outline-none transition-all min-w-[150px]">
+<option disabled="" selected="" value="">Kaynak Filtrele</option>
+<option value="upwork">Upwork</option>
+<option value="linkedin">LinkedIn</option>
+</select>
+</div>
+</div>
+<!-- Leads List Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl border border-slate-200 shadow-[1px_3px_5px_rgba(0,0,0,0.05)] flex flex-col hover:bg-slate-50 transition-colors">
+<div class="p-md border-b border-slate-200 flex justify-between items-start">
+<div>
+<h2 class="font-h3 text-h3 text-on-surface">Ahmet Yılmaz</h2>
+<p class="font-caption text-caption text-secondary mt-base">ABC Teknoloji</p>
+</div>
+<div class="flex gap-xs">
+<button class="text-outline hover:text-primary transition-colors p-base">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button class="text-outline hover:text-error transition-colors p-base">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+</div>
+<div class="p-md flex flex-col gap-sm flex-grow">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-secondary">Durum</span>
+<span class="bg-primary-fixed text-on-primary-fixed font-caption text-caption px-sm py-base rounded-full">Yeni</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-secondary">Kaynak</span>
+<span class="font-body-main text-body-main text-on-surface">Upwork</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-secondary">Değer</span>
+<span class="font-h3 text-h3 text-on-surface">₺5.000</span>
+</div>
+</div>
+<div class="px-md py-sm border-t border-slate-200 bg-surface-container-low rounded-b-xl flex items-center justify-between">
+<span class="material-symbols-outlined text-outline text-[16px]" data-icon="calendar_today">calendar_today</span>
+<span class="font-caption text-caption text-secondary">12.05.2024</span>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl border border-slate-200 shadow-[1px_3px_5px_rgba(0,0,0,0.05)] flex flex-col hover:bg-slate-50 transition-colors">
+<div class="p-md border-b border-slate-200 flex justify-between items-start">
+<div>
+<h2 class="font-h3 text-h3 text-on-surface">Elif Demir</h2>
+<p class="font-caption text-caption text-secondary mt-base">XYZ Digital</p>
+</div>
+<div class="flex gap-xs">
+<button class="text-outline hover:text-primary transition-colors p-base">
+<span class="material-symbols-outlined text-[20px]" data-icon="edit">edit</span>
+</button>
+<button class="text-outline hover:text-error transition-colors p-base">
+<span class="material-symbols-outlined text-[20px]" data-icon="delete">delete</span>
+</button>
+</div>
+</div>
+<div class="p-md flex flex-col gap-sm flex-grow">
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-secondary">Durum</span>
+<span class="bg-[#e9d5ff] text-[#581c87] font-caption text-caption px-sm py-base rounded-full">İletişimde</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-secondary">Kaynak</span>
+<span class="font-body-main text-body-main text-on-surface">LinkedIn</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-bold text-label-bold text-secondary">Değer</span>
+<span class="font-h3 text-h3 text-on-surface">₺12.000</span>
+</div>
+</div>
+<div class="px-md py-sm border-t border-slate-200 bg-surface-container-low rounded-b-xl flex items-center justify-between">
+<span class="material-symbols-outlined text-outline text-[16px]" data-icon="calendar_today">calendar_today</span>
+<span class="font-caption text-caption text-secondary">15.05.2024</span>
+</div>
+</article>
+</div>
+</main>
+</body></html>

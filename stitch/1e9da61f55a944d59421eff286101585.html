@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lead Triage - Pipeline Error</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-lowest": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed": "#ffdbcd",
+                      "surface-container-low": "#f3f3fe",
+                      "background": "#faf8ff",
+                      "on-surface-variant": "#434655",
+                      "secondary-fixed": "#d5e3fc",
+                      "on-surface": "#191b23",
+                      "on-tertiary": "#ffffff",
+                      "primary-fixed": "#dbe1ff",
+                      "on-tertiary-fixed-variant": "#7d2d00",
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#b4c5ff",
+                      "tertiary-fixed-dim": "#ffb596",
+                      "on-background": "#191b23",
+                      "surface-variant": "#e1e2ed",
+                      "surface-container-high": "#e7e7f3",
+                      "primary-container": "#2563eb",
+                      "secondary-container": "#d5e3fc",
+                      "on-primary-fixed": "#00174b",
+                      "surface-container": "#ededf9",
+                      "secondary": "#515f74",
+                      "on-secondary-container": "#57657a",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed-variant": "#3a485b",
+                      "on-primary-fixed-variant": "#003ea8",
+                      "surface-container-highest": "#e1e2ed",
+                      "on-secondary": "#ffffff",
+                      "inverse-surface": "#2e3039",
+                      "surface-tint": "#0053db",
+                      "primary": "#004ac6",
+                      "on-primary-container": "#eeefff",
+                      "surface": "#faf8ff",
+                      "primary-fixed-dim": "#b4c5ff",
+                      "surface-bright": "#faf8ff",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#b9c7df",
+                      "on-tertiary-container": "#ffede6",
+                      "inverse-on-surface": "#f0f0fb",
+                      "tertiary": "#943700",
+                      "outline": "#737686",
+                      "on-secondary-fixed": "#0d1c2e",
+                      "surface-dim": "#d9d9e5",
+                      "tertiary-container": "#bc4800",
+                      "outline-variant": "#c3c6d7",
+                      "on-tertiary-fixed": "#360f00",
+                      "on-primary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "sm": "12px",
+                      "base": "4px",
+                      "xl": "32px",
+                      "margin": "24px",
+                      "xs": "8px",
+                      "gutter": "16px",
+                      "lg": "24px",
+                      "md": "16px"
+              },
+              "fontFamily": {
+                      "label-bold": ["Inter"],
+                      "h3": ["Inter"],
+                      "h1": ["Inter"],
+                      "caption": ["Inter"],
+                      "body-main": ["Inter"],
+                      "body-large": ["Inter"],
+                      "h2": ["Inter"]
+              },
+              "fontSize": {
+                      "label-bold": ["12px", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                      "h3": ["20px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                      "h1": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                      "caption": ["12px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "400" }],
+                      "body-main": ["14px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+                      "body-large": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                      "h2": ["24px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        body { background-color: #faf8ff; } /* surface */
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-main text-body-main min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest w-full top-0 border-b border-outline-variant z-50 shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+<div class="flex items-center justify-between px-8 h-16 w-full max-w-7xl mx-auto">
+<!-- Brand -->
+<div class="flex items-center gap-margin">
+<span class="font-h3 text-h3 text-on-surface tracking-tight">Lead Triage</span>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center gap-lg ml-xl mt-4">
+<a class="text-on-surface-variant hover:text-on-surface font-body-large text-body-large pb-4 -mb-4 transition-all" href="#">Leads</a>
+<a class="text-primary border-b-2 border-primary font-body-large text-body-large font-semibold pb-4 -mb-4" href="#">Pipeline</a>
+<a class="text-on-surface-variant hover:text-on-surface font-body-large text-body-large pb-4 -mb-4 transition-all" href="#">Insights</a>
+<a class="text-on-surface-variant hover:text-on-surface font-body-large text-body-large pb-4 -mb-4 transition-all" href="#">Settings</a>
+</nav>
+</div>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-sm">
+<button aria-label="Search" class="p-2 rounded-full hover:bg-surface-variant text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+<button aria-label="Notifications" class="p-2 rounded-full hover:bg-surface-variant text-on-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</button>
+<div class="h-8 w-8 rounded-full bg-secondary-container overflow-hidden ml-sm border border-outline-variant">
+<img alt="User profile" class="h-full w-full object-cover" data-alt="A professional headshot of a person looking directly at the camera. The lighting is studio-quality, creating a bright and clean corporate aesthetic. The background is a neutral, soft grey, emphasizing the professional context suitable for a business application avatar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANM83H86TqaAGYSmr1vKbQ3zzfm-qHkNALrDQAmto-FFLhMu9CLgUogL9OYlpWno6QkGljHLFnwK4Z915wsce77WxP8iAp83Un2dyNvI7Y0ICRZ8hmDNCjRLNiJvw3kBBCOficEkd9Znp6ABah3UQBbVoVBjAyHkA3UP4JJNaamX3OFKlu0eNZE3O08Tm0Sj8fa7C5hy34vyr41FpGNlPjdEVqgiUsgUDjgaNvAZcWFNAyZKl4jo1cgEITmbLNK2Pnyv7x0HuPJVpQ"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Error Banner -->
+<div class="bg-error-container w-full border-b border-error/20 z-40 relative shadow-sm">
+<div class="max-w-7xl mx-auto px-8 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3 text-on-error-container">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">error</span>
+<span class="font-body-main text-body-main font-medium">Veriler kaydedilemedi. Depolama alanı dolu olabilir.</span>
+</div>
+<div class="flex items-center gap-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-none border border-outline-variant bg-surface-container-lowest text-on-surface hover:bg-surface-variant font-label-bold text-label-bold px-4 py-2 rounded-DEFAULT transition-colors whitespace-nowrap">
+                    Yerel Veriyi Temizle
+                </button>
+<button class="flex-1 sm:flex-none bg-primary text-on-primary hover:bg-primary/90 font-label-bold text-label-bold px-4 py-2 rounded-DEFAULT transition-colors shadow-sm whitespace-nowrap">
+                    Tekrar Dene
+                </button>
+</div>
+</div>
+</div>
+<!-- Main Content Area (Blurred Overlay State) -->
+<main class="flex-1 w-full max-w-7xl mx-auto px-8 py-margin relative overflow-hidden">
+<!-- Blur Wrapper -->
+<div class="w-full h-full blur-[3px] opacity-60 pointer-events-none select-none transition-all duration-300">
+<!-- Header section of Pipeline -->
+<div class="flex justify-between items-end mb-margin">
+<div>
+<h1 class="font-h1 text-h1 text-on-surface mb-base">Pipeline Overview</h1>
+<p class="font-body-main text-body-main text-on-surface-variant">Track and manage your active deals across stages.</p>
+</div>
+<div class="flex gap-sm">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT px-4 py-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">filter_list</span>
+<span class="font-label-bold text-label-bold text-on-surface">Filter</span>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT px-4 py-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">sort</span>
+<span class="font-label-bold text-label-bold text-on-surface">Sort</span>
+</div>
+</div>
+</div>
+<!-- Kanban Board Grid -->
+<div class="grid grid-cols-12 gap-gutter items-start">
+<!-- Column 1: New Leads -->
+<div class="col-span-4 flex flex-col gap-sm">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant mb-xs">
+<h3 class="font-h3 text-h3 text-on-surface">New Leads</h3>
+<span class="bg-surface-container-high text-on-surface-variant font-caption text-caption px-2 py-1 rounded-full">12</span>
+</div>
+<!-- Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4 shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+<div class="flex justify-between items-start mb-3">
+<span class="bg-secondary-container text-on-secondary-container font-caption text-caption px-2 py-1 rounded-DEFAULT font-medium">Enterprise</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">more_horiz</span>
+</div>
+<h4 class="font-h3 text-body-large font-semibold text-on-surface mb-1">Acme Corp Expansion</h4>
+<p class="font-body-main text-body-main text-on-surface-variant mb-4 line-clamp-2">Looking for a scalable solution for their European offices.</p>
+<div class="flex items-center justify-between mt-auto pt-3 border-t border-outline-variant/50">
+<span class="font-label-bold text-label-bold text-on-surface">$45,000</span>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span class="font-caption text-caption">Added 2d ago</span>
+</div>
+</div>
+</div>
+<!-- Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4 shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+<div class="flex justify-between items-start mb-3">
+<span class="bg-primary-container/20 text-primary font-caption text-caption px-2 py-1 rounded-DEFAULT font-medium">SME</span>
+</div>
+<h4 class="font-h3 text-body-large font-semibold text-on-surface mb-1">Globex Logistics</h4>
+<p class="font-body-main text-body-main text-on-surface-variant mb-4 line-clamp-2">Initial inquiry regarding basic software integration.</p>
+<div class="flex items-center justify-between mt-auto pt-3 border-t border-outline-variant/50">
+<span class="font-label-bold text-label-bold text-on-surface">$12,500</span>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span class="font-caption text-caption">Added 5h ago</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 2: Contacted -->
+<div class="col-span-4 flex flex-col gap-sm">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant mb-xs">
+<h3 class="font-h3 text-h3 text-on-surface">Contacted</h3>
+<span class="bg-surface-container-high text-on-surface-variant font-caption text-caption px-2 py-1 rounded-full">8</span>
+</div>
+<!-- Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4 shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+<div class="flex justify-between items-start mb-3">
+<span class="bg-tertiary-container/20 text-tertiary font-caption text-caption px-2 py-1 rounded-DEFAULT font-medium">Partner</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">more_horiz</span>
+</div>
+<h4 class="font-h3 text-body-large font-semibold text-on-surface mb-1">Stark Industries Q3</h4>
+<p class="font-body-main text-body-main text-on-surface-variant mb-4 line-clamp-2">Follow-up call scheduled for next Tuesday. Waiting on technical specs.</p>
+<div class="flex items-center justify-between mt-auto pt-3 border-t border-outline-variant/50">
+<span class="font-label-bold text-label-bold text-on-surface">$120,000</span>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span class="font-caption text-caption">Action Required</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 3: Qualified -->
+<div class="col-span-4 flex flex-col gap-sm">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant mb-xs">
+<h3 class="font-h3 text-h3 text-on-surface">Qualified</h3>
+<span class="bg-surface-container-high text-on-surface-variant font-caption text-caption px-2 py-1 rounded-full">4</span>
+</div>
+<!-- Card -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-4 shadow-[0_1px_3px_rgba(0,0,0,0.05)] border-l-4 border-l-primary">
+<div class="flex justify-between items-start mb-3">
+<span class="bg-secondary-container text-on-secondary-container font-caption text-caption px-2 py-1 rounded-DEFAULT font-medium">Enterprise</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">more_horiz</span>
+</div>
+<h4 class="font-h3 text-body-large font-semibold text-on-surface mb-1">Wayne Enterprises</h4>
+<p class="font-body-main text-body-main text-on-surface-variant mb-4 line-clamp-2">Proposal sent. Budget approved by stakeholders.</p>
+<div class="flex items-center justify-between mt-auto pt-3 border-t border-outline-variant/50">
+<span class="font-label-bold text-label-bold text-on-surface">$250,000</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span class="font-caption text-caption">High Probability</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>
