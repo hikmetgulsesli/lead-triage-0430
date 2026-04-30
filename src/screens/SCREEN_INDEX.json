@@ -1,0 +1,236 @@
+[
+  {
+    "screenId": "7ef24ff064284a9e825ab130f010c78a",
+    "title": "Analizler Paneli",
+    "componentName": "AnalizlerPaneli",
+    "file": "src/screens/AnalizlerPaneli.tsx",
+    "buttons": 2,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "74d8116acff24e3082b3027a4e086aa6",
+    "title": "Boş Durum Ekranı",
+    "componentName": "BosDurumEkrani",
+    "file": "src/screens/BosDurumEkrani.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "58086bec2986499484e0a44dadc20977",
+    "title": "Leads Listesi",
+    "componentName": "LeadsListesi",
+    "file": "src/screens/LeadsListesi.tsx",
+    "buttons": 7,
+    "inputs": 1,
+    "links": 4
+  },
+  {
+    "screenId": "1be55f17b316452c9742fd2f910eb209",
+    "title": "Profil ve Hesap Paneli",
+    "componentName": "ProfilVeHesapPaneli",
+    "file": "src/screens/ProfilVeHesapPaneli.tsx",
+    "buttons": 3,
+    "inputs": 3,
+    "links": 0
+  },
+  {
+    "screenId": "bb76c733a40440d7aa94b8cd17f9ff99",
+    "title": "Yeni Lead Ekleme Modalı",
+    "componentName": "YeniLeadEklemeModali",
+    "file": "src/screens/YeniLeadEklemeModali.tsx",
+    "buttons": 4,
+    "inputs": 4,
+    "links": 4
+  },
+  {
+    "screenId": "102f243fd9c74d77989937372b79078f",
+    "title": "Ayarlar Sayfası",
+    "componentName": "AyarlarSayfasi",
+    "file": "src/screens/AyarlarSayfasi.tsx",
+    "buttons": 6,
+    "inputs": 1,
+    "links": 7
+  },
+  {
+    "screenId": "0696706b5a45413c91f3d35e96ed0c61",
+    "title": "Veri Depolama Hatası Bannerı",
+    "componentName": "VeriDepolamaHatasiBanneri",
+    "file": "src/screens/VeriDepolamaHatasiBanneri.tsx",
+    "buttons": 4,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "a0bdb1312c1648ceb381ce28de85f260",
+    "title": "Silme Onay Modalı",
+    "componentName": "SilmeOnayModali",
+    "file": "src/screens/SilmeOnayModali.tsx",
+    "buttons": 2,
+    "inputs": 0,
+    "links": 0
+  },
+  {
+    "screenId": "c1c1f1fa8391403888e7a1c52f98fc8e",
+    "title": "Pipeline Görünümü",
+    "componentName": "PipelineGorunumu",
+    "file": "src/screens/PipelineGorunumu.tsx",
+    "buttons": 8,
+    "inputs": 1,
+    "links": 4
+  },
+  {
+    "screenId": "d0f724fcd91b4a4281d5a27916e9bbb6",
+    "title": "Yeni Lead Ekleme Modalı",
+    "componentName": "YeniLeadEklemeModali",
+    "file": "src/screens/YeniLeadEklemeModali.tsx",
+    "buttons": 5,
+    "inputs": 4,
+    "links": 4
+  },
+  {
+    "screenId": "bf16ef62aca24aed86f1a3c3a8428228",
+    "title": "Leads Listesi",
+    "componentName": "LeadsListesi",
+    "file": "src/screens/LeadsListesi.tsx",
+    "buttons": 9,
+    "inputs": 1,
+    "links": 4
+  },
+  {
+    "screenId": "df8183ece21645e3b2fc4ebe36326c75",
+    "title": "Analizler Paneli",
+    "componentName": "AnalizlerPaneli",
+    "file": "src/screens/AnalizlerPaneli.tsx",
+    "buttons": 2,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "59cc06504a234861917555c5c151f027",
+    "title": "Silme Onay Modalı",
+    "componentName": "SilmeOnayModali",
+    "file": "src/screens/SilmeOnayModali.tsx",
+    "buttons": 2,
+    "inputs": 0,
+    "links": 0
+  },
+  {
+    "screenId": "5c31f7d44e4948398afb5ee7746cab00",
+    "title": "Profil ve Hesap Paneli",
+    "componentName": "ProfilVeHesapPaneli",
+    "file": "src/screens/ProfilVeHesapPaneli.tsx",
+    "buttons": 5,
+    "inputs": 1,
+    "links": 6
+  },
+  {
+    "screenId": "c121e23e83a245918f7624baa0809c75",
+    "title": "Boş Durum Ekranı",
+    "componentName": "BosDurumEkrani",
+    "file": "src/screens/BosDurumEkrani.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "8702cc85f7754af3bdaddd3b3a218bfe",
+    "title": "Pipeline Görünümü",
+    "componentName": "PipelineGorunumu",
+    "file": "src/screens/PipelineGorunumu.tsx",
+    "buttons": 11,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "46da8bbff42540f2801680c59f706539",
+    "title": "Ayarlar Sayfası",
+    "componentName": "AyarlarSayfasi",
+    "file": "src/screens/AyarlarSayfasi.tsx",
+    "buttons": 5,
+    "inputs": 1,
+    "links": 7
+  },
+  {
+    "screenId": "1e9da61f55a944d59421eff286101585",
+    "title": "Veri Depolama Hatası Bannerı",
+    "componentName": "VeriDepolamaHatasiBanneri",
+    "file": "src/screens/VeriDepolamaHatasiBanneri.tsx",
+    "buttons": 4,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "45bd33e21da9480f9681c85eff369be6",
+    "title": "Analizler Paneli",
+    "componentName": "AnalizlerPaneli",
+    "file": "src/screens/AnalizlerPaneli.tsx",
+    "buttons": 2,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "656281255d7a45abb111ffb7ac2e5f3c",
+    "title": "Veri Depolama Hatası Bannerı",
+    "componentName": "VeriDepolamaHatasiBanneri",
+    "file": "src/screens/VeriDepolamaHatasiBanneri.tsx",
+    "buttons": 4,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "ba00954e812f4430aea39bfa964fdcc6",
+    "title": "Boş Durum Ekranı",
+    "componentName": "BosDurumEkrani",
+    "file": "src/screens/BosDurumEkrani.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "6f8e422a5a404e9ca4037dce256c5962",
+    "title": "Pipeline Görünümü",
+    "componentName": "PipelineGorunumu",
+    "file": "src/screens/PipelineGorunumu.tsx",
+    "buttons": 3,
+    "inputs": 1,
+    "links": 4
+  },
+  {
+    "screenId": "740ff27d412048a59e2ab0cff96a2944",
+    "title": "Leads Listesi",
+    "componentName": "LeadsListesi",
+    "file": "src/screens/LeadsListesi.tsx",
+    "buttons": 12,
+    "inputs": 2,
+    "links": 4
+  },
+  {
+    "screenId": "85ec769521e84fe092be5b6026cb8d5d",
+    "title": "Ayarlar Sayfası",
+    "componentName": "AyarlarSayfasi",
+    "file": "src/screens/AyarlarSayfasi.tsx",
+    "buttons": 6,
+    "inputs": 0,
+    "links": 7
+  },
+  {
+    "screenId": "0bd5493cdc564d77bf88ba0ecb3676f6",
+    "title": "Yeni Lead Ekleme Modalı",
+    "componentName": "YeniLeadEklemeModali",
+    "file": "src/screens/YeniLeadEklemeModali.tsx",
+    "buttons": 6,
+    "inputs": 4,
+    "links": 0
+  },
+  {
+    "screenId": "47278c523a2b46459e5eb5af959eb9ea",
+    "title": "Profil ve Hesap Paneli",
+    "componentName": "ProfilVeHesapPaneli",
+    "file": "src/screens/ProfilVeHesapPaneli.tsx",
+    "buttons": 3,
+    "inputs": 4,
+    "links": 4
+  }
+]
